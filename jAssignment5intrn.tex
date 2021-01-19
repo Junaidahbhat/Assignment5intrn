@@ -1,0 +1,217 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{gensymb}
+\usepackage{tkz-euclide}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\begin{document}
+\title{Assignment 5}
+\author{Junaid Ahmad Bhat}
+\date{\today}
+\maketitle
+\section*{\small Question:}
+If AC = 7,$\angle$  A =60$^{\circ}$ and $\angle$B = 50$^{\circ}$, can you draw the triangle?
+\section*{\small Solution:}
+\begin{center}
+
+\begin{tikzpicture}
+    	
+		
+       \coordinate [label=left:$A$] (A) at (0,0);
+		\coordinate [label=above:$B$] (B) at (3.225,5.58);
+		\coordinate [label=right:$C$] (C) at (5.25,0);
+	
+		\draw (B) -- node[left,xshift=-1mm] {$\textrm{c}$} (A) -- node[below]
+		{$\textrm{b}$} (C) -- node[right,,xshift=1mm] 
+		{$\textrm{a}$} (B);
+		  
+		%\tkzMarkRightAngle[fill=black!10,size=0.8](A,B,C);
+		  
+\end{tikzpicture}\\
+\hspace*{2cm}Rough Sketch\\
+\end{center}
+
+\vspace*{1cm}
+
+To draw the Triangle with given conditions,
+Let's first find the value of $\angle$C.\\
+
+Using property, Sum of angles of triangle,\\
+ 
+We have,\\
+
+$\angle$ A + $\angle$ B + $\angle$ C = 180$^{\circ}$\\
+
+60$^{\circ}$ + 50$^{\circ}$ + $\angle$ C =180$^{\circ}$  \hspace*{2cm} (given)\\
+
+Therefore,$\angle$ C = 70$^{\circ}$.\\
+
+
+\textbf{To draw the triangle,we need know the coordinates of all vertices.}\\
+
+ Assuming starting vertix as A with coordinates as (0,0)\\
+
+Therefore,\\
+\hspace*{0.5cm} vertex C has coordinates as (7,0) \hspace*{3cm}(as given AC=7)\\
+
+\textbf{Coordinates of vertix B:}\\
+
+Actually vertix B is intersection point of lines AB and CB,so let's find it.\\
+
+Eqn of line AB:y=mx+c;     \hspace*{2cm} (m=slope of line and c is constt.)\\
+
+\hspace*{2.8cm}y=1.732x+c  \hspace*{2cm}  (as given $\angle$ A=60$^{\circ}$ $\Rightarrow$ m=tan(60$^{\circ}$))\\
+
+\hspace*{0.5cm} value of c=0-1.732(0)=0 \hspace*{2cm}(as line AB passes through (0,0))\\
+
+Therefore,\\
+
+\hspace*{0.5cm}line AB:y=1.732x.  \hspace*{3cm}(1) \\
+
+Similarly,\\
+
+Eqn of line AB:y=mx+c;     \hspace*{2cm} (m=slope of line and c is constt.)\\
+
+\hspace*{2.8cm}y=-2.727x+c  \hspace*{2cm}  (as  $\angle$ C=70$^{\circ}$ $\Rightarrow$ m=tan(110))\\
+
+\hspace*{0.5cm} value of c=0+2.747(7)=0 \hspace*{2cm}(as line CB passes through (7,0))\\
+
+Therefore,\\
+
+\hspace*{0.5cm}line CB:y=-2.747x+19.23.   \hspace*{2.5cm}(2) \\
+
+\pagebreak
+\textbf{Finding Intersection point of line AB and CB}\\
+
+Substuting,eqn(1) in eqn(2),we get\\
+
+x=$\dfrac{19.23}{(1.73+2.727)}$\\
+
+$\Rightarrow$ x=4.292.\hspace*{3cm} (3)\\
+
+Substuting,eqn(3) in eqn(1),we get\\
+
+y=1.73(4.292)\\
+
+$\Rightarrow$ y=7.44.\hspace*{3cm} (4)\\
+
+\textbf{Therefore,coordinates of vertex B are (4.292,7.44)}\\
+
+Below figure 1 is possible triangle we can draw with coordinates
+\hspace*{0.5cm} as A(0,0), B(4.292,7.44) and C(7,0).\\
+
+\vspace*{1cm} 
+ 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Assignment5intrn}
+\caption{Figure using python}
+\end{figure}
+
+\pagebreak
+
+\section*{\small Question:}
+Construct $\Delta$ PQR if PQ = 5, $\angle$Q = 105$^{\circ}$ and $\angle$R = 40$^{\circ}$.
+\section*{\small Solution:}
+\begin{center}
+
+\begin{tikzpicture}
+    	
+		
+       \coordinate [label=left:$P$] (P) at (0,0);
+		\coordinate [label=below:$Q$] (Q) at (3.75,0);
+		\coordinate [label=right:$R$] (R) at (4.61,3.225);
+	
+		\draw
+        (Q) -- node[below,xshift=-1mm]
+		{$\textrm{r}$} 
+		(P) -- node[left,xshift=-1mm]
+		{$\textrm{q}$} 
+		(R) -- node[right,,xshift=1mm] 
+		{$\textrm{p}$} (Q);
+		  
+		%\tkzMarkRightAngle[fill=black!10,size=0.8](A,B,C);
+		  
+\end{tikzpicture}\\
+\hspace*{2cm}Rough Sketch\\
+\end{center}
+
+\vspace*{1cm}
+
+To draw the Triangle with given conditions,
+Let's first find the value of $\angle$P.\\
+
+Using property, Sum of angles of triangle,\\
+ 
+We have,\\
+
+$\angle$ P + $\angle$ Q + $\angle$ R = 180$^{\circ}$\\
+
+$\angle$ P  + 105$^{\circ}$ + 40$^{\circ}$ =180$^{\circ}$ \hspace*{2cm} (given) \\
+
+Therefore,$\angle$ P  = 35$^{\circ}$.\\
+
+\textbf{To draw the triangle,we need know the coordinates of all vertices.}\\
+
+ Assuming starting vertix as P with coordinates as (0,0)\\
+
+Therefore,\\
+\hspace*{0.5cm} vertex Q has coordinates as (5,0) \hspace*{3cm}(as given PQ=5)\\
+
+\textbf{Coordinates of vertix R:}\\
+
+Actually vertix R is intersection point of lines PR and QR,so let's find it.\\
+
+Eqn of line PR:y=mx+c;     \hspace*{2cm} (m=slope of line and c is constt.)\\
+
+\hspace*{2.8cm}y=0.7x+c  \hspace*{2cm}  (as  $\angle$ P=35$^{\circ}$ $\Rightarrow$ m=tan(35$^{\circ}$))\\
+
+\hspace*{0.5cm} value of c=0-0.7(0)=0 \hspace*{2cm}(as line PR passes through (0,0))\\
+
+Therefore,\\
+
+\hspace*{0.5cm}line PR:y=0.7x.  \hspace*{3cm}(1) \\
+
+Similarly,\\
+
+Eqn of line PR:y=mx+c;     \hspace*{2cm} (m=slope of line and c is constt.)\\
+
+\hspace*{2.8cm}y=3.73x+c  \hspace*{2cm}  (as  $\angle$ Q=105$^{\circ}$ $\Rightarrow$ m=tan(75))\\
+
+\hspace*{0.5cm} value of c=0-3.73(5)=0 \hspace*{2cm}(as line QR passes through (5,0))\\
+
+Therefore,\\
+
+\hspace*{0.5cm}line QR:y=3.73x-18.65.   \hspace*{2.5cm}(2) \\
+
+\textbf{Finding Intersection point of line PR and QR}\\
+
+Substuting,eqn(1) in eqn(2),we get\\
+
+x=$\dfrac{18.65}{(3.73-0.7)}$\\
+
+$\Rightarrow$ x=6.15.\hspace*{3cm} (3)\\
+
+Substuting,eqn(3) in eqn(1),we get\\
+
+y=0.7(6.15)\\
+
+$\Rightarrow$ y=4.3.\hspace*{3cm} (4)\\
+
+\textbf{Therefore,coordinates of vertex R are (6.15,4.3)}\\
+
+Below figure 2 is given triangle with coordinates as P(0,0),Q(7,0) and  \hspace*{0.5cm}R(6.15,4.3).\\
+ 
+ \vspace*{2cm}
+ 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Assignment5intrn2}
+\caption{Figure using python}
+\end{figure}
+
+\vspace*{4cm}
+\textbf{Note:}m (i,e slope)=tan(angle measured anti-clock wise from x-axis)
+
+\end{document}
